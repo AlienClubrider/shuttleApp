@@ -1,0 +1,74 @@
+<ion-header>
+  <ion-navbar>
+    <button ion-button menuToggle>
+      <ion-icon name="menu"></ion-icon>
+    </button>
+    <ion-title>Shuttle App</ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content>
+  <h3>Student</h3>
+  <ion-row>
+    <ion-col width-80>
+      <button ion-button full [style.background-color]="papa" (click)="clicked('0')">Papa John's
+  </button>
+    </ion-col>
+    <ion-col>
+      <ion-icon [style.visibility]="papaSeen" item-right name="checkmark"></ion-icon>
+    </ion-col>
+
+  </ion-row>
+  <ion-row>
+    <ion-col width-80>
+      <button ion-button full [style.background-color]="crow" (click)="clicked('1')">Crowley
+    </button>
+    </ion-col>
+    <ion-col>
+      <ion-icon [style.visibility]="crowSeen" name="checkmark"></ion-icon>
+    </ion-col>
+  </ion-row>
+  <ion-row>
+    <ion-col width-80>
+      <button ion-button full [style.background-color]="fresh" (click)="clicked('2')">Freshman Lot
+  </button>
+    </ion-col>
+    <ion-col>
+      <ion-icon [style.visibility]="freshSeen" name="checkmark"></ion-icon>
+    </ion-col>
+
+  </ion-row>
+
+  <ion-row>
+    <ion-col width-80>
+      <button ion-button full [style.background-color]="apart" (click)="clicked('3')">Apartments
+  </button>
+    </ion-col>
+    <ion-col>
+      <ion-icon [style.visibility]="apartSeen" name="checkmark"></ion-icon>
+    </ion-col>
+  </ion-row>
+
+
+  <ion-row>
+    <ion-col width-80>
+      <button ion-button full [style.background-color]="chap" (click)="clicked('4')">Chapel
+  </button>
+    </ion-col>
+    <ion-col>
+      <ion-icon [style.visibility]="chapSeen" name="checkmark"></ion-icon>
+    </ion-col>
+  </ion-row>
+
+
+  <ion-row>
+    <ion-col width-80>
+      <button ion-button full [style.background-color]="rob" (click)="clicked('5')">Roberts
+  </button>
+    </ion-col>
+    <ion-col>
+      <ion-icon [style.visibility]="robSeen" name="checkmark"></ion-icon>
+    </ion-col>
+  </ion-row>
+
+</ion-content>
